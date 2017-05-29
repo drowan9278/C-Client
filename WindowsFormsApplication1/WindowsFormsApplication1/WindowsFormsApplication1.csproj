@@ -52,6 +52,7 @@
     <Compile Include="accountLoginHome.Designer.cs">
       <DependentUpon>accountLoginHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Account.cs" />
     <Compile Include="Withdraw.cs">
       <SubType>Form</SubType>
     </Compile>
