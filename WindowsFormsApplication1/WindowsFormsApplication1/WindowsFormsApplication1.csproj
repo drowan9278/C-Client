@@ -89,6 +89,9 @@
     <EmbeddedResource Include="accountLoginHome.resx">
       <DependentUpon>accountLoginHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="checkChecking.resx">
+      <DependentUpon>checkChecking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

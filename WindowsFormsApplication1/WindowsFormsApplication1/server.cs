@@ -29,7 +29,10 @@ namespace WindowsFormsApplication1
                 int bytesReceive = sender.Receive(bytes);
                 Console.WriteLine("Echoed Test = {0}", Encoding.ASCII.GetString(bytes, 0, bytesReceive));
                 sender.Shutdown(SocketShutdown.Both);
+                sender.Disconnect(true);
+               
                 sender.Close();
+                Console.WriteLine("Disconnected From Server");
                 return true;
             }
             catch (ArgumentNullException ane)

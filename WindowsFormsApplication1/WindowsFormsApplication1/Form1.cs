@@ -37,11 +37,14 @@ namespace WindowsFormsApplication1
             {
                 Console.Out.Write("String input is valid");
                 server serverTo = new server();
-                //serverTo.connectServer(username,password);
-                Hide();
-                (new accountLoginHome()).Show();
-
-                
+                bool status = serverTo.connectServer(username,password);
+                if (status)
+                {
+                    Hide();
+                    (new accountLoginHome()).Show();
+                }
+                else
+                    Console.WriteLine("Failed to Connect");              
             }
             else
             {
