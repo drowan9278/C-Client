@@ -37,7 +37,10 @@ namespace WindowsFormsApplication1
             {
                 Console.Out.Write("String input is valid");
                 server serverTo = new server();
-                serverTo.connectServer(username,password);
+                //serverTo.connectServer(username,password);
+                Hide();
+                (new accountLoginHome()).Show();
+
                 
             }
             else

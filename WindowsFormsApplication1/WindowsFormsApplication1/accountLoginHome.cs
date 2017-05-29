@@ -21,5 +21,16 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void EXIT_Click(object sender, EventArgs e)
+        {
+            Hide();
+            (new Form1()).Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
